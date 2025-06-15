@@ -1,0 +1,105 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #9b59b6;
+    --success-color: #2ecc71;
+    --danger-color: #e74c3c;
+    --light-color: #f5f7fa;
+    --dark-color: #333;
+    --gray-color: #7f8c8d;
+    --border-radius: 15px;
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: var(--dark-color);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--gray-color);
+}
+
+.app-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* 简历预览专用样式 - 可调整变量 */
+.resume-preview {
+    --base-font-size: 16px;
+    /* 基础字号 */
+    --title-scale: 2.2;
+    /* 标题放大系数 */
+    --subtitle-scale: 1.4;
+    /* 副标题放大系数 */
+    --heading-scale: 1.5;
+    /* 章节标题放大系数 */
+    --line-height: 1.6;
+    /* 行高 */
+    --paragraph-spacing: 1em;
+    /* 段落间距 */
+
+    font-size: var(--base-font-size);
+    line-height: var(--line-height);
+    color: #333;
+}
+
+.resume-preview .resume-name {
+    font-size: calc(var(--base-font-size) * var(--title-scale));
+    font-weight: 700;
+    color: #1e5799;
+    margin-bottom: var(--paragraph-spacing);
+}
+
+.resume-preview .resume-title {
+    font-size: calc(var(--base-font-size) * var(--subtitle-scale));
+    color: #555;
+    margin-bottom: var(--paragraph-spacing);
+}
+
+.resume-preview .resume-section-title {
+    font-size: calc(var(--base-font-size) * var(--heading-scale));
+    color: #1e5799;
+    margin: calc(var(--paragraph-spacing) * 1.5) 0 calc(var(--paragraph-spacing) * 0.8);
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eaeef5;
+}
+
+.resume-preview .resume-item-content {
+    font-size: 1em;
+    line-height: var(--line-height);
+    margin-bottom: var(--paragraph-spacing);
+}
+
+/* 其他样式... */
