@@ -84,7 +84,7 @@ import ProjectExperience from './components/ProjectExperience.vue'
 import EducationExperience from './components/EducationExperience.vue'
 import ResumePreview from './components/ResumePreview.vue'
 import PolishModal from './components/PolishModal.vue'
-import { exportToPDF } from 'resume-vue/src/utils/exportPdf'
+import { exportToPDF } from './utils/exportPdf'
 
 // 简历数据
 const resumeData = reactive({

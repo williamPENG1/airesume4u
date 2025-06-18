@@ -2,7 +2,7 @@ import requests
 import json
 
 # 测试端点
-url = "http://localhost:8000/prompt/polish"
+url = "http://localhost:80/prompt/polish"
 
 # 请求头
 headers = {

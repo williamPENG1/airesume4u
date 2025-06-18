@@ -1,5 +1,8 @@
 {
-    "app": "main:app",
-    "port": 8080,
-    "reload": true
+    "app": "app.main:app",
+    "host": "127.0.0.1",
+    "port": 80,
+    "reload": true,
+    "workers": 4,
+    "log_level": "info"
 }

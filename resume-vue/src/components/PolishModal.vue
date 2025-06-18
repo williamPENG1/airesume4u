@@ -70,7 +70,7 @@ const close = () => {
 const polish = async () => {
   isPolishing.value = true
   try {
-    const response = await fetch('http://localhost:8000/prompt/polish', {
+    const response = await fetch('http://localhost:80/prompt/polish', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
